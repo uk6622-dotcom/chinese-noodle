@@ -1,6 +1,10 @@
 import autogen
 from autogen import AssistantAgent, UserProxyAgent
 import os
+from dotenv import load_dotenv
+
+# .env 파일에서 환경 변수 로드
+load_dotenv()
 
 # API 키 설정 (환경 변수에서 가져옴)
 api_key = os.getenv("OPENAI_API_KEY")
